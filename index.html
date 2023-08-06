@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PGN to nice charts</title>
+    <style>
+        #canvas {
+            max-height: 90vh;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+   <input type="file" id="file-selector" accept=".pgn">
+   <select name="variant" id="variant">
+       <option value="Antichess">Antichess</option>
+       <option value="Atomic">Atomic</option>
+       <option value="King of the Hill">King of the Hill</option>
+       <option value="Crazyhouse">Crazyhouse</option>
+       <option value="Three-check">Three-check</option>
+       <option value="Horde">Horde</option>
+       <option value="Chess960">Chess960</option>
+       <option value="Racing Kings">Racing Kings</option>
+       <option value="UltraBullet">UltraBullet</option>
+       <option value="Bullet">Bullet</option>
+       <option value="Blitz">Blitz</option>
+       <option value="Rapid">Rapid</option>
+       <option value="Classical">Classical</option>
+       <option value="Standard">Standard</option>
+   </select>
+   <button onclick="draw()">Chart</button>
+   
+   <div id="canvas-div"></div>
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
